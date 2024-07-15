@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New HTML Types</title>
+</head>
+<body>
+    <h1>Exploring forms in HTML</h1>
+    <body>
+    <form action="/submit" method="post">
+        <fieldset>
+            <legend>Lets get some starting Information</legend>
+            <label for="email">Please enter your email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required="yes" aria-label="Enter your email">
+            <br>
+        
+
+            <label for="quantity">Please enter your lucky number: </label>
+            <input type="number" id="number" min="1" max="1000" step="1" placeholder="Lucky?" aria-label="Please enter your lucky number">
+            <br>
+
+            <label for="birthdate">Please enter your birthday, inlcuding year: </label>
+            <input type="date" id="birthdate" name="birthdate">
+        </fieldset>
+        <br>
+        <fieldset>
+            <label for="feelings">How are you feeling about coding so far??</label>
+            <label for="feelings"><b>Still lost</b></label>
+            <input type="range" id="feelings" name="feelings" min="0" max="100" value="50" step="5">
+            <label for="feelings"><b>Great</b></label>
+            <br>
+    
+            <legend>Coding questionare</legend>
+            <label for="Language">Please select your favorite programming language</label>
+            <select id="language" name="language" placeholder="Please select language">
+                <option value="python">Python</option>
+                <option value="C++">C++</option>
+                <option value="HTML">HTML</option>
+                <option value="Java">Java</option>
+            </select><br>
+
+            <label>Level of expertise:</label>
+            <input type="radio" id="beginner" name="level" value="beginner" aria-label="beginner">
+            <label for="beginner"><b>Beginner</b></label>
+            <input type="radio" id="intermediate" name="level" value="intermediate" aria-label="intermediate">
+            <label for="intermediate"><b>Intermediate</b></label>
+            <input type="radio" id="expert" name="level" value="expert" aria-label="expert">
+            <label for="expert"><b>Expert</b></label>
+            <br>
+
+            <label for="platform">What are your preferred programming languages:</label>
+            <input type="checkbox" id="platform" name="platform" value="Web"aria-label="web"><b>Web</b> 
+            <input type="checkbox" id="platform" name="platform" value="mobile" aria-label="mobile"><b>Mobile</b>
+            <input type="checkbox" id="platform" name="platform" value="desktop" aria-label="desktop"><b>Desktop</b>
+    </fieldset>
+        <br>
+    </body>
+        
+
+
+
+        <br>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit Email</button>
+    </form>
+    
+</body>
+</html>
